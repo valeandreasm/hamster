@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <h1>&#x1f353 HELLO HAMIS &#x1f439</h1>
+    <p class="motivo">Bienvenidxs a mi página! Aquí podrás encontrar todos mis diseños, gratis o de pago, reunidos
+        en un sólo lugar.
+    </p>
+            {% block 'carrusel' %}
+            {% include 'carrusel.html' %}
+            {% endblock %}
+    <h2>&#x1f9f6 PATRONES DISPONIBLES &#x1f9f6</h2> 
+            {% block 'tarjetas' %}
+            {% include 'tarjetas.html' %}
+            {% endblock %}
+{% endblock %}

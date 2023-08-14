@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <h3>Suscríbete</h3>
+    <p class="txtform">Recibe noticias, notificaciones de nuevo contenido, promociones y eventos</p>
+        <div class="container-fluid col-6 mx-auto">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form}}
+                <div id="btn1" class="text-center">
+                    <button id="btnsus" class="btn">SUSCRIBIR</button>
+                </div>
+            </form>
+        </div>
+    <img class="hampc" src="{% static 'img/hampc.jpg' %}">
+{% endblock %}
